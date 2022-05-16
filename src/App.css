@@ -1,38 +1,78 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background: rgb(39, 33, 33);
+  color: #fff;
+}
+
+h1, h2{
+  font-family: 'Pangolin', cursive;
+}
+
+.infoplanet{
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Pangolin', cursive;
+}
+
+input {
+  background: #443737;
+  box-shadow: 1px 1px 6px rgb(0 0 0 / 50%);
+  border: 0;
+  width: 55%;
+  height: 20px;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: .95rem;
+  cursor: pointer;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner {
+  background-image: url(https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/QQWVSJ6MDVGKRELX455KIABEEY.gif);
+  height: 200px;
+  background-position: 45% 33%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.resident-list{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.resident-list li{
+  padding: 10px;
+  width: 350px;
+  margin-left: 16%;
+}
+.cards{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.infostatus{
+  position: relative;
+}
+
+.iconstatus{
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 37%;
+  top: 0.3rem;
+  border-radius: 50%;
 }
